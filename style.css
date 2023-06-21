@@ -370,7 +370,7 @@ header {
 .prices {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .price {
@@ -380,7 +380,7 @@ header {
   border: 0.4px solid #005ae2;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .price.price-active {
@@ -409,7 +409,7 @@ header {
 .price-lists {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 14px;
 }
 
