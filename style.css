@@ -606,10 +606,11 @@ option {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  gap: 10px;
 }
 
 .question-header-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .question-btn {
