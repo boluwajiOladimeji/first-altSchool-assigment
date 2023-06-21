@@ -584,20 +584,14 @@ option {
   margin-bottom: 4rem;
 }
 
-.question-title {
-  font-size: 1.8rem;
-}
-
-@media screen and (min-width: 950px) {
-  .question-title {
-    font-size: 2.5rem;
-  }
-}
-
 .question {
   padding: 0.7rem;
   border-bottom: 1px dotted #d6d6d6;
   cursor: pointer;
+}
+
+.question-title {
+  font-size: 2.5rem;
 }
 
 .question-center {
@@ -615,7 +609,7 @@ option {
 }
 
 .question-header-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .question-btn {
@@ -641,4 +635,15 @@ option {
 
 .active .question-body {
   display: block;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 950px) {
+  .question-header-title {
+    font-size: 1.25rem;
+  }
+
+  .question-body {
+    font-size: 1rem;
+  }
 }
