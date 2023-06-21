@@ -19,7 +19,7 @@ a {
 }
 
 section {
-  padding-block: 8rem;
+  padding-block: 5rem;
 }
 
 .header-center,
@@ -170,7 +170,11 @@ header {
   display: flex;
   flex-direction: column;
 
-  background-color: white;
+  background: linear-gradient(
+    to right,
+    rgba(226, 233, 240, 0.7) rgba(220, 228, 235, 0.7),
+    rgba(255, 255, 255, 1)
+  );
   z-index: 1000;
 }
 
@@ -190,6 +194,7 @@ header {
 
 .circle-layer-img {
   width: 100%;
+  display: block;
 }
 
 @media screen and (min-width: 900px) {
@@ -206,6 +211,7 @@ header {
 /* Views */
 .views {
   padding: 3.875rem 0;
+  background: #f9fbfd;
 }
 
 .views-center {
@@ -246,4 +252,26 @@ header {
     display: flex;
     gap: 3rem;
   }
+}
+
+/* Features */
+
+.features-title {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.section-title-bar {
+  width: 8px;
+  height: 2.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 34, 50, 1),
+    rgba(77, 107, 136, 0)
+  );
+  margin-top: 0.5rem;
+}
+
+.features-title-para {
+  font-size: 1rem;
 }
