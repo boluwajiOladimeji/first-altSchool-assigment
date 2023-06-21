@@ -434,6 +434,7 @@ header {
     flex-direction: row;
     gap: 0;
     justify-content: center;
+    margin-top: 8rem;
   }
 
   .price.price-active {
