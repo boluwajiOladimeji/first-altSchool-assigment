@@ -879,7 +879,7 @@ footer {
   bottom: 0;
   right: 0;
   z-index: 9999999999;
-  transition: all 1s ease;
+  transition: all 0.5s ease-in-out;
   transform: translateX(-1000%);
 }
 
@@ -918,6 +918,7 @@ footer {
   transform: translateX(0);
 }
 
-.sidebar-open-btn {
+.sidebar-open-btn,
+.sidebar-close-btn {
   cursor: pointer;
 }

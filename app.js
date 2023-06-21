@@ -6,6 +6,7 @@ const questions = document.querySelectorAll('.question');
 const openSidebar = document.querySelector('.sidebar-open-btn');
 const closeSidebar = document.querySelector('.sidebar-close-btn');
 const sidebar = document.querySelector('.sidebar');
+const sidebarLinks = document.querySelector('.sidebar-links');
 
 // sidebar Open
 openSidebar.addEventListener('click', (e) => {
@@ -36,6 +37,12 @@ navLinks.addEventListener('click', (e) => {
   scrollToView(id);
 });
 
+sidebarLinks.addEventListener('click', (e) => {
+  e.preventDefault();
+  const id = e.target.getAttribute('href');
+  scrollToView(id);
+});
+
 function scrollToView(id) {
   if (!id) return;
   const element = document.querySelector(id);
@@ -46,6 +53,8 @@ function scrollToView(id) {
   if (!fixedNav) {
     position -= navHeight;
   }
+
+  if (sidebar.classList.contains('show')) sidebar.classList.remove('show');
 
   window.scrollTo({
     left: 0,
