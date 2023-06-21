@@ -258,13 +258,13 @@ header {
 /* Features */
 
 .features-title-container {
-  display: flex;
-  gap: 0.8rem;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
 }
 
 .section-title-bar {
-  width: 8px;
+  width: 5px;
   height: 2.5rem;
   background: linear-gradient(
     to bottom,
