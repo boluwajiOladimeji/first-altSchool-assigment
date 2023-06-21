@@ -121,6 +121,17 @@ nav {
   margin-left: auto;
 }
 
+.feature-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-tag img {
+  display: block;
+  width: 100%;
+}
+
 @media screen and (min-width: 900px) {
   .logo-btn {
     display: none;
