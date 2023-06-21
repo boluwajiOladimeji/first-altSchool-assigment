@@ -778,12 +778,43 @@ option {
 footer {
   padding-block: 5.5rem;
   padding-block-end: 3rem;
+  position: relative;
+}
+
+.footer-bg {
+  display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .footer-bg {
+    display: block;
+  }
+
+  .footer-bg img {
+    width: 100%;
+    display: block;
+  }
+
+  .footer-bg-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .footer-bg-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 }
 
 .footer-center {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  z-index: 10;
 }
 
 .footer img {
