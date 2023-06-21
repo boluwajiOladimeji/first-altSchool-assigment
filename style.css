@@ -559,3 +559,22 @@ input::placeholder {
   color: #3284ff;
   font-size: 0.6;
 }
+
+.domain-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 16px 18px;
+  border: 1px solid #0065fe;
+  border-radius: 12px;
+  width: 50%;
+}
+
+.alias {
+  width: 50%;
+}
+
+.domain-choice {
+  border: none;
+  padding: 0;
+}
