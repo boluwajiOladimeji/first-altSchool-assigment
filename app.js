@@ -77,3 +77,12 @@ function displayActiveQuestion(e) {
   questions.forEach((question) => question.classList.remove('active'));
   activeQuestion.classList.add('active');
 }
+
+window.addEventListener('resize', (e) => {
+  const minWidth = 950;
+  if (window.innerWidth < minWidth) return;
+  if (window.innerWidth >= minWidth) {
+    if (!sidebar.classList.contains('show')) return;
+    sidebar.classList.remove('show');
+  }
+});
