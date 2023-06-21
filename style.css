@@ -26,7 +26,7 @@ section {
 .nav-center,
 .section-center {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -37,12 +37,23 @@ section {
 .primary-blue-400 {
   color: #005ae2;
 }
-.btn-blue {
-  background-color: #0065fe;
-  color: #fff;
+
+.btn {
   padding: 1rem 2rem;
   border-radius: 100px;
   transition: all 0.5s ease-in;
+  display: inline-block;
+  border: 1px solid #0065fe;
+}
+
+.btn-blue {
+  background-color: #0065fe;
+  color: #fff;
+}
+
+.btn-white {
+  color: #0065fe;
+  background: #fff;
 }
 
 .btn-blue:hover {
@@ -371,16 +382,16 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .price {
-  padding: 24px 50px 40px;
+  padding: 1.5rem 4rem 2.5rem;
   display: flex;
   flex-direction: column;
   border: 0.4px solid #005ae2;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
-  gap: 1.5rem;
 }
 
 .price.price-active {
@@ -388,22 +399,23 @@ header {
 
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
   color: #fff;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
 }
 
 .price-plan {
   font-weight: bolder;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .price-type {
   font-size: 2rem;
   font-weight: bolder;
+  margin-bottom: 0.5rem;
 }
 
 .price-text {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .price-lists {
@@ -419,9 +431,21 @@ header {
   gap: 5px;
 }
 
+.pricing-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
   .pricing .section-title-bar {
     display: block;
+  }
+
+  .pricing-btns {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -435,11 +459,19 @@ header {
     gap: 0;
     justify-content: center;
     margin-top: 8rem;
+    margin-bottom: 8rem;
   }
 
   .price.price-active {
     scale: 1.2;
+    margin-top: -2rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
   }
+}
+
+.price {
+  padding-bottom: -2rem;
 }
 
 .header-bold {
