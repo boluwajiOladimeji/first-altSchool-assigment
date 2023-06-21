@@ -917,3 +917,7 @@ footer {
 .sidebar.show {
   transform: translateX(0);
 }
+
+.sidebar-open-btn {
+  cursor: pointer;
+}
