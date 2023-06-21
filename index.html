@@ -314,19 +314,27 @@
           />
 
           <div class="form-control domain-input">
-            <div class="domain-flex">
-              <input
+            <!-- <input
                 type="text"
                 placeholder="Choose Domain"
                 class="domain-choice"
-              />
-              <img src="./images/down-arrow-blue.svg" alt="" />
-            </div>
+              /> -->
+
+            <select
+              name="choose domain"
+              id="choose domain"
+              class="domain-choice"
+            >
+              <option value="choose Domain">Choose Domain</option>
+              <option value="basic">Basic</option>
+              <option value="professional">Professional</option>
+              <option value="teams">Teams</option>
+            </select>
 
             <input
               type="text"
               placeholder="Type Alias here"
-              class="form-control alias"
+              class="form-control"
             />
           </div>
 
