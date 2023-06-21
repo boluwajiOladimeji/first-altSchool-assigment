@@ -447,6 +447,10 @@ header {
     flex-direction: row;
     justify-content: center;
   }
+
+  .pricing-btn {
+    width: 20rem;
+  }
 }
 
 @media screen and (min-width: 900px) {
