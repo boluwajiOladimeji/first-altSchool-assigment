@@ -533,6 +533,10 @@ select {
   color: #3284ff;
 }
 
+select {
+  background: none;
+}
+
 input::placeholder,
 option {
   color: #3284ff;
