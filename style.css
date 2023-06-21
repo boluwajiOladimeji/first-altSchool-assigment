@@ -441,3 +441,20 @@ header {
     scale: 1.2;
   }
 }
+
+.header-bold {
+  position: relative;
+}
+.header-bold-underline {
+  display: none;
+}
+
+@media screen and (min-width: 950px) {
+  .header-bold-underline {
+    display: inline-block;
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    transform: translateX(-60%);
+  }
+}
