@@ -3,6 +3,17 @@ const footerDate = document.querySelector('.footer-date');
 const navLinks = document.querySelector('.nav-links');
 const questionCont = document.querySelector('.question-center');
 const questions = document.querySelectorAll('.question');
+const openSidebar = document.querySelector('.sidebar-open-btn');
+const closeSidebar = document.querySelector('.sidebar-close-btn');
+const sidebar = document.querySelector('.sidebar');
+
+// sidebar Open
+openSidebar.addEventListener('click', (e) => {
+  sidebar.classList.add('show');
+});
+closeSidebar.addEventListener('click', (e) => {
+  sidebar.classList.remove('show');
+});
 
 // Sticky Nav
 window.addEventListener('scroll', (e) => {
