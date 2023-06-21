@@ -438,21 +438,6 @@ header {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
-  .pricing .section-title-bar {
-    display: block;
-  }
-
-  .pricing-btns {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .pricing-btn {
-    width: 20rem;
-  }
-}
-
 @media screen and (min-width: 900px) {
   .price-type {
     font-size: 2.5rem;
@@ -485,6 +470,20 @@ header {
   display: none;
 }
 
+@media screen and (min-width: 600px) {
+  .pricing .section-title-bar {
+    display: block;
+  }
+
+  .pricing-btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pricing-btn {
+    width: 15rem;
+  }
+}
 @media screen and (min-width: 950px) {
   .header-bold-underline {
     display: inline-block;
@@ -493,4 +492,59 @@ header {
     left: 50%;
     transform: translateX(-60%);
   }
+}
+
+/* Form */
+.form {
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+}
+
+.form-center {
+  background: white;
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.form-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+input {
+  outline: none;
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid #0065fe;
+  border-radius: 12px;
+}
+
+input::placeholder {
+  color: #3284ff;
+  font-size: 12px;
+}
+
+.url-input {
+  grid-column: 1/-1;
+}
+
+.domain-input {
+  display: flex;
+  align-items: center;
+}
+
+.domain-input img {
+  display: block;
+}
+
+.form-btn {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
