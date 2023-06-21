@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
@@ -611,6 +615,7 @@ option {
 /* Question */
 .questions {
   position: relative;
+  overflow: hidden;
 }
 
 .faq-bg {
@@ -722,6 +727,7 @@ option {
 .optimize {
   background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
   position: relative;
+  overflow-y: hidden;
 }
 
 .optimize h1 {
@@ -766,4 +772,62 @@ option {
     bottom: 0;
     /* z-index: -1; */
   }
+}
+
+/* footer  */
+footer {
+  padding-block: 5.5rem;
+  padding-block-end: 3rem;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer img {
+  display: block;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .footer-center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer-center {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer-second-line {
+    grid-column: 2/3;
+  }
+}
+
+.footer a:hover {
+  color: #0065fe;
+}
+
+.footer-text {
+  margin-top: 4rem;
+  text-align: right;
+  font-size: 14px;
 }
