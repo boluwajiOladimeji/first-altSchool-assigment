@@ -675,7 +675,7 @@ option {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -800,7 +800,7 @@ option {
 /* footer  */
 footer {
   padding-block: 5.5rem;
-  padding-block-end: 3rem;
+  padding-block-end: 2.5rem;
   position: relative;
 }
 
