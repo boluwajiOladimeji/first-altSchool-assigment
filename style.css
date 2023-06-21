@@ -5,7 +5,9 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'gilroy-medium', sanserif;
+
   line-height: 1.5;
 }
 
