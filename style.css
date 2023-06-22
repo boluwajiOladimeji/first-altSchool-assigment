@@ -584,10 +584,6 @@ option {
   gap: 10px;
 }
 
-.domain-input img {
-  display: block;
-}
-
 .form-btn {
   grid-column: 1/-1;
   display: flex;
@@ -600,16 +596,6 @@ option {
   margin-top: 1rem;
   color: #3284ff;
   font-size: 0.6;
-}
-
-.domain-flex {
-  display: flex;
-  justify-content: space-between;
-  gap: 5px;
-  padding: 16px 18px;
-  border: 1px solid #0065fe;
-  border-radius: 12px;
-  width: 50%;
 }
 
 /* Question */
