@@ -193,6 +193,7 @@ header {
 
 .header-btn {
   width: 9rem;
+  cursor: pointer;
 }
 
 .bg-none {
