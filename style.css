@@ -531,7 +531,7 @@ header {
   background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
   position: relative;
   overflow: hidden;
-  z-index: -10;
+  /* z-index: -10; */
 }
 
 .form-bg {
