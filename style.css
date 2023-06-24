@@ -631,6 +631,7 @@ option {
   padding: 0.7rem;
   border-bottom: 1px dotted #d6d6d6;
   cursor: pointer;
+  transition: all 0.5s ease-in;
 }
 
 .question-title {
@@ -680,7 +681,17 @@ option {
 
 .active .question-body {
   display: block;
+  animation: question 0.4s ease-in-out;
   font-size: 0.8rem;
+}
+
+@keyframes question {
+  0% {
+    transform: translateY(-0.7rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 950px) {
